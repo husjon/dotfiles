@@ -1,1 +1,2 @@
-Sync/workstation/.fehbg
+#!/bin/sh
+/usr/bin/feh --no-fehbg --bg-fill '/home/husjon/projects/Blender/descent.ships.png' 
