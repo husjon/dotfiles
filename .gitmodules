@@ -1,0 +1,6 @@
+[submodule ".config/polybar/modules/available_packages"]
+	path = .config/polybar/modules/available_packages
+	url = git@github.com:husjon/polybar_module-available_packages.git
+[submodule ".config/polybar/modules/restart_required"]
+	path = .config/polybar/modules/restart_required
+	url = git@github.com:husjon/polybar_module-restart_required.git
