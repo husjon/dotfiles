@@ -1,0 +1,89 @@
+[global_config]
+  borderless = True
+  inactive_color_offset = 1.0
+[keybindings]
+  zoom_in = <Primary>plus
+  zoom_out = <Primary>minus
+  zoom_normal = <Primary>0
+  new_tab = ""
+  cycle_next = ""
+  cycle_prev = ""
+  go_next = ""
+  go_prev = ""
+  go_up = ""
+  go_down = ""
+  go_left = ""
+  go_right = ""
+  rotate_cw = ""
+  rotate_ccw = ""
+  split_horiz = ""
+  split_vert = ""
+  close_term = ""
+  copy = <Primary><Shift>c
+  paste = <Primary><Shift>v
+  toggle_scrollbar = ""
+  search = ""
+  close_window = ""
+  resize_up = ""
+  resize_down = ""
+  resize_left = ""
+  resize_right = ""
+  move_tab_right = ""
+  move_tab_left = ""
+  toggle_zoom = ""
+  scaled_zoom = ""
+  next_tab = ""
+  prev_tab = ""
+  full_screen = ""
+  reset = ""
+  reset_clear = ""
+  hide_window = ""
+  group_all = ""
+  ungroup_all = ""
+  group_tab = ""
+  ungroup_tab = ""
+  new_window = ""
+  new_terminator = ""
+  insert_number = ""
+  insert_padded = ""
+  edit_window_title = ""
+  edit_tab_title = ""
+  edit_terminal_title = ""
+  layout_launcher = ""
+  help = ""
+[profiles]
+  [[default]]
+    background_color = "#1b1b1b"
+    background_darkness = 0.9
+    background_type = transparent
+    font = JetBrains Mono 10
+    foreground_color = "#c5c8c6"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#1b1b1b:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#707880:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
+    copy_on_selection = True
+  [[dark]]
+    font = Roboto weight=250 Italic 1
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_custom_command = True
+    custom_command = ~/bin/activate_spoop
+    use_system_font = False
+  [[defaultish]]
+    scrollback_infinite = True
+  [[pdu]]
+    backspace_binding = automatic
+    delete_binding = automatic
+    scroll_on_output = True
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+      profile = default
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
