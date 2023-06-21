@@ -4,3 +4,6 @@
 [submodule ".config/polybar/modules/restart_required"]
 	path = .config/polybar/modules/restart_required
 	url = git@github.com:husjon/polybar_module-restart_required.git
+[submodule ".config/polybar/modules/weather"]
+	path = .config/polybar/modules/weather
+	url = git@github.com:husjon/polybar_module-weather.git
