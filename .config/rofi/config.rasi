@@ -1,0 +1,32 @@
+configuration {
+    modi:                   "drun,window,ssh,run,combi";
+    font:                   "JetBrains Mono Regular 16";
+
+    monitor:                 "-4";
+
+    drun-match-fields:      "Name";
+    matching:               "fuzzy";
+    sorting-method:         "fzf";
+    sort:                   true;
+    sidebar-mode:           true;
+    combi-modi:             "drun,window";
+    terminal:               "terminator";
+    ssh-command:            "{terminal} -e '{ssh-client} {host} || (echo \"\nPress any key to close\"; read)'";
+
+    kb-mode-previous:       "Super+h";
+    kb-row-down:            "Super+j";
+    kb-row-up:              "Super+k";
+    kb-mode-next:           "Super+l";
+    kb-accept-entry:        "Return,KP_Enter";
+    kb-remove-char-back:    "BackSpace";
+    kb-remove-word-back:    "Control+w";
+
+    kb-clear-line:          "Super+Delete";
+    kb-remove-to-eol:       "";
+
+}
+@import "~/.cache/wal/colors-rofi-dark"
+
+/*
+ * vim:ft=css
+ */
