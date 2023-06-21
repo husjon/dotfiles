@@ -5,11 +5,15 @@
 #include ".colors/terminal.sexy/hybrid"
 #include ".colors/overrides"
 
-{% if yadm.hostname == 'workstation' -%}
+{% if yadm.hostname == 'workstation' %}
     {% set font_size = 11 %}
-{% elif yadm.hostname == 'laptop' -%}
+{% endif %}
+{% if yadm.hostname == 'workstation-sb' %}
+    {% set font_size = 11 %}
+{% endif %}
+{% if yadm.hostname == 'laptop' %}
     {% set font_size = 15 %}
-{% endif -%}
+{% endif %}
 
 !#define fonts                   -dec-terminal-medium-*-*-*-*-*-*-*-*-*-iso8859-*
 
@@ -31,11 +35,15 @@
 *.background:                   black
 *.foreground:                   white
 
-{% if yadm.hostname == 'workstation' -%}
+{% if yadm.hostname == 'workstation' %}
 rofi.font:                      Terminus (TTF) Bold 12
-{% elif yadm.hostname == 'laptop' -%}
+{% endif %}
+{% if yadm.hostname == 'workstation-sb' %}
+rofi.font:                      Terminus (TTF) Bold 12
+{% endif %}
+{% if yadm.hostname == 'laptop' %}
 rofi.font:                      Terminus (TTF) Bold 15
-{% endif -%}
+{% endif %}
 
 URxvt.depth:                    32
 URxvt.background:               [90]black
