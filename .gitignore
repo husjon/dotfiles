@@ -1,0 +1,11 @@
+.cache
+.config/Code
+.config/Microsoft/Microsoft\ Teams
+.config/google-chrome
+.local
+.npm
+.nvm
+.vscode*
+Downloads
+node_modules
+projects*/*
