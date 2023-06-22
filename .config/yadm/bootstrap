@@ -1,0 +1,40 @@
+#!/bin/bash
+
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+ORANGE=$(tput setaf 3)
+BOLD=$(tput bold)
+CLEAR=$(tput sgr0)
+
+function warn { echo -en "\n\n${BOLD}${ORANGE}[-] $* ${CLEAR}\n"; }
+function success { echo -en "${BOLD}${GREEN}[+] $* ${CLEAR}\n"; }
+function info { echo -en "\n\n${BOLD}[ ] $* ${CLEAR}\n"; }
+function error { echo -en "${BOLD}${RED}[!] $* ${CLEAR}\n"; }
+function notify { echo -en "\n\n${BOLD}${ORANGE}[!] $* ${CLEAR}\n"; }
+
+PACKAGES=(
+	alacritty
+	dunst
+	feh
+	flameshot
+	i3lock
+	imagemagick
+	polybar
+	python-pywal
+	python-requests
+	rofi
+	ttf-font-awesome
+	ttf-jetbrains-mono
+	xss-lock
+	zsh
+)
+
+
+if [[ $(yadm config --get local.class) == "" ]]; then
+	notify "yadm - Class has not been set yet"
+	echo -n "Enter Class: "
+	read YADM_CLASS
+	yadm config local.class "$YADM_CLASS"
+fi
+
+sudo pacman -S "${PACKAGES[@]}"
