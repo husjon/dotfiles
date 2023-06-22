@@ -58,7 +58,6 @@ for_window [all] border pixel 1
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id ~/.config/carla/setup_sound.sh
 exec_always --no-startup-id picom
@@ -100,6 +99,7 @@ bindsym $mod + Scroll_Lock exec --no-startup-id xautolock -locknow
 
 
 # Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod + Ctrl + Shift + p     exec --no-startup-id polybar-msg cmd toggle
 
 
