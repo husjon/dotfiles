@@ -66,6 +66,9 @@ exec_always --no-startup-id run_electron_app bitwarden
 exec_always --no-startup-id run_electron_app obsidian
 exec_always --no-startup-id pkill steam && while pgrep steam; do sleep 1; done; sleep 1; steam
 
+exec_always --no-startup-id xset s 60 0                 # Screensaver
+exec_always --no-startup-id xset dpms 120 240 300       # DPMS
+
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
