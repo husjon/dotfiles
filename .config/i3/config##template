@@ -65,16 +65,6 @@ exec_always --no-startup-id ~/.fehbg
 exec_always --no-startup-id run_electron_app bitwarden
 exec_always --no-startup-id run_electron_app obsidian
 exec_always --no-startup-id pkill steam && while pgrep steam; do sleep 1; done; sleep 1; steam
-exec_always --no-startup-id xautolock -corners ---- -time 30 -locker /home/husjon/projects/locker/lock -notify 6 -notifier "notify-send -u critical -t 5000 Locking"
-
-
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -95,7 +85,8 @@ bindsym XF86AudioNext           exec --no-startup-id playerctl next
 
 
 # Locker
-bindsym $mod + Scroll_Lock exec --no-startup-id xautolock -locknow
+exec_always --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/.lock_screen.png -t
+bindsym $mod+Scroll_Lock exec --no-startup-id loginctl lock-session
 
 
 # Polybar
