@@ -19,6 +19,7 @@ PACKAGES=(
 	flameshot
 	i3lock
 	imagemagick
+	playerctl
 	polybar
 	python-pywal
 	python-requests
