@@ -28,6 +28,9 @@ PACKAGES=(
 	ttf-nerd-fonts-symbols
 	xss-lock
 	zsh
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+
 )
 
 
