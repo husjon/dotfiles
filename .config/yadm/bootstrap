@@ -24,8 +24,8 @@ PACKAGES=(
 	python-pywal
 	python-requests
 	rofi
-	ttf-font-awesome
 	ttf-jetbrains-mono
+	ttf-nerd-fonts-symbols
 	xss-lock
 	zsh
 )
