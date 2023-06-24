@@ -64,7 +64,8 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id ~/.fehbg
 exec_always --no-startup-id run_electron_app bitwarden
 exec_always --no-startup-id run_electron_app obsidian
-exec_always --no-startup-id pkill steam && while pgrep steam; do sleep 1; done; sleep 1; steam
+#exec_always --no-startup-id pkill steam && while pgrep steam; do sleep 1; done; sleep 1; steam
+exec_always --no-startup-id steam -vgui
 exec_always --no-startup-id sleep 1 && wal -R
 
 exec_always --no-startup-id xset s 60 0                 # Screensaver
