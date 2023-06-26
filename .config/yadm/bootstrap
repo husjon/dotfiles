@@ -14,6 +14,7 @@ function notify { echo -en "\n\n${BOLD}${ORANGE}[!] $* ${CLEAR}\n"; }
 
 PACKAGES=(
     alacritty
+    arc-gtk-theme
     dunst
     feh
     flameshot
