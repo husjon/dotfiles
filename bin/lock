@@ -1,0 +1,9 @@
+#!/bin/bash
+SEAT=$(loginctl --no-pager list-seats | grep -v 'SEAT' | head -n 1)
+SESSION=$(loginctl --no-pager show-seat $SEAT | grep '^Sessions=' | sed 's/Sessions=//')
+LOGINCTL_STATE="$(loginctl --no-pager show-session ${SESSION} --p State --value)"
+
+[[ -L "/dev/usb/yubikey" ]]       && { echo yubikey connected; exit 0; }
+[[ $LOGINCTL_STATE != "active" ]] && { echo already locked; exit 0; }
+
+loginctl lock-session

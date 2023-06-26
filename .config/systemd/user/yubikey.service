@@ -1,0 +1,11 @@
+[Unit]
+BindsTo=dev-usb-yubikey.device
+
+[Service]
+Environment=DISPLAY=:0
+
+ExecStart=sleep 1h
+ExecStop=bash -c "sleep 10s; ~/bin/lock"
+
+[Install]
+#WantedBy=dev-usb-yubikey.device

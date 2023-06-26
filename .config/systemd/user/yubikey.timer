@@ -1,0 +1,11 @@
+[Unit]
+#BindsTo=dev-usb-yubikey.device
+
+[Timer]
+OnCalendar=*:*:0/10
+AccuracySec=1sec
+
+[Install]
+WantedBy=timers.target
+
+
