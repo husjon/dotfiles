@@ -1,0 +1,12 @@
+#!/bin/bash
+
+case $1 in
+    obsidian)
+        pgrep -f '/usr/lib/obsidian/app.asar' && exit
+        obsidian "$2";;
+    bitwarden)
+        pgrep -f '/usr/lib/bitwarden/app.asar' && exit
+        bitwarden-desktop;;
+    *)
+        exit;;
+esac
