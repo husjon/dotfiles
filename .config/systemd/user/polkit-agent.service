@@ -1,0 +1,13 @@
+[Unit]
+Description=lxpolkit-gtk3
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=lxpolkit
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
