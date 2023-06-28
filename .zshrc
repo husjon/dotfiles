@@ -96,4 +96,13 @@ alias ls='ls --color=auto --group-directories-first'
 alias ll="ls -l"
 
 # git
+alias ga="git add"
 alias gs="git status"
+alias grb="git rebase --interactive"
+alias gc="git commit"
+alias gc!="git commit --amend"
+alias gl="git pull"
+alias gp="git push"
+alias gst="git stash"
+alias gstp="git stash pop"
+alias gcb="git checkout -b"
