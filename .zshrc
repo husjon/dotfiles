@@ -5,6 +5,7 @@ cat ~/.cache/wal/sequences
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+setopt      incappendhistory    # Immediately append to the history file, not just when a term is killed
 
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
