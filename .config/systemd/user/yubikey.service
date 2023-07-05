@@ -5,7 +5,7 @@ BindsTo=dev-usb-yubikey.device
 Environment=DISPLAY=:0
 
 ExecStart=sleep 1h
-ExecStop=bash -c "sleep 10s; loginctl lock-session"
+ExecStop=bash -c "sleep 10s; test -L /dev/usb/yubikey || loginctl lock-session"
 
 [Install]
 #WantedBy=dev-usb-yubikey.device
