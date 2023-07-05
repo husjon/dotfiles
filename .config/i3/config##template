@@ -68,7 +68,7 @@ exec_always --no-startup-id run_electron_app obsidian
 exec_always --no-startup-id steam -vgui
 exec_always --no-startup-id sleep 1 && wal -R
 
-exec_always --no-startup-id xset s 60 0                 # Screensaver
+exec_always --no-startup-id xset s 300 0                # Screensaver
 exec_always --no-startup-id xset dpms 120 240 300       # DPMS
 
 
