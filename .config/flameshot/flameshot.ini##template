@@ -11,7 +11,7 @@ drawColor=#ff0000
 drawFontSize=34
 drawThickness=5
 keepOpenAppLauncher=false
-saveAfterCopy=true
+saveAfterCopy=false
 saveAsFileExtension=png
 saveLastRegion=false
 {% if yadm.hostname == "workstation" %}
@@ -52,7 +52,7 @@ TYPE_RESIZE_DOWN=Shift+Down
 TYPE_RESIZE_LEFT=Shift+Left
 TYPE_RESIZE_RIGHT=Shift+Right
 TYPE_RESIZE_UP=Shift+Up
-TYPE_SAVE=
+TYPE_SAVE=Ctrl+S
 TYPE_SELECTION=S
 TYPE_SELECTIONINDICATOR=
 TYPE_SELECT_ALL=Ctrl+A
