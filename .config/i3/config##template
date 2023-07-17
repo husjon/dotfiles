@@ -122,7 +122,7 @@ bindsym $mod+Shift+r        exec PureRef
 bindsym $mod+shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi
+bindsym $mod+d exec --no-startup-id rofi -show combi
 bindsym $mod+shift+d exec --no-startup-id ~/bin/custom-rofi
 
 # A more modern dmenu replacement is rofi:
