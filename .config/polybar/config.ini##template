@@ -286,6 +286,54 @@
     tray-padding = 5
     ; tray-background = ${colors.alt.background}
 {% endif %}
+{% if yadm.hostname == "laptop" %}
+[bar/eDP-1]
+    monitor = ${env:MONITOR}
+    width = 100%
+    height = 32
+    offset-x = 0
+    offset-y = 0
+    bottom = true
+
+    background = ${colors.background}
+    #background = #00000000
+    foreground = ${colors.foreground}
+
+    overline-size = 0
+    overline-color = #f00
+    underline-size = 2
+    underline-color = #00f
+
+    #border-top-size = 12
+    #border-bottom-size = 0
+    #border-left-size =  12
+    #border-right-size = 12
+
+    padding-left = 6
+    padding-right = 6
+    module-margin-left = 1
+    module-margin-right = 2
+
+    font-0 = "JetBrains Mono:pixelsize=11;+3"
+    font-1 = "Font Awesome 6 Free Regular:size=11;+2"
+    font-2 = "Font Awesome 6 Free Solid:size=11;+2"
+    font-3 = "Font Awesome 6 Brands:size=11;+2"
+    font-4 = "FontAwesome:size=11;+2"
+    font-5 = "Material Design Icons:size=13;+2"
+
+    wm-restack      = i3
+
+    #override-redirect = true
+
+    scroll-up       = i3-deskprev
+    scroll-down     = i3-desknext
+
+    modules-left =
+    modules-center = i3
+    modules-right =  pulseaudio date
+
+    enable-ipc = true
+{% endif %}
 
 [module/i3]
     type = internal/i3
