@@ -15,10 +15,12 @@ function notify { echo -en "\n\n${BOLD}${ORANGE}[!] $* ${CLEAR}\n"; }
 PACKAGES=(
     alacritty
     arc-gtk-theme
+    dex
     dunst
     fakeroot
     feh
     flameshot
+    git
     i3lock
     imagemagick
     lxsession-gtk3
@@ -35,6 +37,7 @@ PACKAGES=(
     python-pywal
     python-requests
     rofi
+    trash-cli
     ttf-jetbrains-mono
     ttf-nerd-fonts-symbols
     which
