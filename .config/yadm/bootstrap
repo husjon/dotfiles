@@ -16,11 +16,14 @@ PACKAGES=(
     alacritty
     arc-gtk-theme
     dunst
+    fakeroot
     feh
     flameshot
     i3lock
     imagemagick
     lxsession-gtk3
+    make
+    patch
     playerctl
     polybar
     python-pywal
@@ -28,6 +31,7 @@ PACKAGES=(
     rofi
     ttf-jetbrains-mono
     ttf-nerd-fonts-symbols
+    which
     xss-lock
     zsh
     zsh-autosuggestions
@@ -43,3 +47,15 @@ if [[ $(yadm config --get local.class) == "" ]]; then
 fi
 
 sudo pacman -S "${PACKAGES[@]}"
+
+
+if ! type pikaur; then
+    mkdir -p ~/.builds/
+    wget \
+        https://github.com/actionless/pikaur/archive/refs/tags/1.17.tar.gz \
+        -O ~/.builds/pikaur.tar.gz
+    cd ~/.builds || exit
+    tar xfzv pikaur.tar.gz && cd ~/.builds/pikaur-* || exit
+    makepkg -rsci
+fi
+
