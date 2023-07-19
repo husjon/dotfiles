@@ -51,7 +51,7 @@ PACKAGES=(
 if [[ $(yadm config --get local.class) == "" ]]; then
     notify "yadm - Class has not been set yet"
     echo -n "Enter Class: "
-    read YADM_CLASS
+    read -r YADM_CLASS
     yadm config local.class "$YADM_CLASS"
 fi
 
