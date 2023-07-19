@@ -24,6 +24,12 @@ PACKAGES=(
     lxsession-gtk3
     make
     patch
+    pipewire
+    pipewire-alsa
+    pipewire-audio
+    pipewire-docs
+    pipewire-jack
+    pipewire-pulse
     playerctl
     polybar
     python-pywal
