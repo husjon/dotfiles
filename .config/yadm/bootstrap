@@ -25,6 +25,7 @@ PACKAGES=(
     imagemagick
     lxsession-gtk3
     make
+    noto-fonts-emoji
     patch
     pipewire
     pipewire-alsa
