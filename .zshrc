@@ -112,3 +112,6 @@ alias gs="git status"
 alias gst="git stash"
 alias gstp="git stash pop"
 function gcmsg() { git commit -m "$*" }
+
+# Sources
+source /usr/share/nvm/init-nvm.sh
