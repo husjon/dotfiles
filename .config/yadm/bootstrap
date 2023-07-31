@@ -49,6 +49,7 @@ PACKAGES=(
     zsh-syntax-highlighting
 )
 
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
 if [[ $(yadm config --get local.class) == "" ]]; then
     notify "yadm - Class has not been set yet"
