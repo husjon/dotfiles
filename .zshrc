@@ -86,6 +86,7 @@ fi
 
 
 # Variables
+export TERM=xterm
 export EDITOR=nvim
 
 
