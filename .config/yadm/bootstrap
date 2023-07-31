@@ -21,6 +21,7 @@ PACKAGES=(
     feh
     flameshot
     git
+    gpick
     i3lock
     imagemagick
     lxsession-gtk3

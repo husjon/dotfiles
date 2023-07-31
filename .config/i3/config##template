@@ -191,6 +191,10 @@ bindsym Print exec --no-startup-id flameshot screen
 bindsym shift+Print exec --no-startup-id flameshot full
 
 
+# Color Picker
+bindsym $mod+ctrl+s exec bash -c "sleep 0.1 && gpick -p"
+bindsym $mod+ctrl+p exec gpick
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -294,6 +298,7 @@ assign          [instance="cadence.py"]         $workspace_10
 for_window      [instance="godot_engine"]       floating enable
 for_window      [instance="godot_editor" title="godot engine"]       floating disable
 #for_window      [instance="steamwebhelper" title="^Steam"]     floating enable
+for_window      [instance="gpick"]       floating enable
 
 
 for_window      [floating]  move position center
