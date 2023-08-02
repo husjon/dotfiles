@@ -27,6 +27,7 @@ PACKAGES=(
     lxsession-gtk3
     make
     noto-fonts-emoji
+    pacman-contrib
     patch
     pipewire
     pipewire-alsa
