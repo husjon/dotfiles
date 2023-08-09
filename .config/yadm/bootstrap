@@ -21,6 +21,7 @@ PACKAGES=(
     feh
     flameshot
     git
+    gnome-keyring
     gpick
     i3lock
     imagemagick
