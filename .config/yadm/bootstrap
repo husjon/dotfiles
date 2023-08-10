@@ -20,6 +20,7 @@ PACKAGES=(
     fakeroot
     feh
     flameshot
+    fzf
     git
     gnome-keyring
     gpick
