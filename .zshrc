@@ -118,3 +118,4 @@ function gcmsg() { git commit -m "$*" }
 
 # Sources
 source /usr/share/nvm/init-nvm.sh
+source /usr/share/fzf/key-bindings.zsh
