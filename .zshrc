@@ -7,6 +7,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt      incappendhistory    # Immediately append to the history file, not just when a term is killed
 
+setopt      HIST_IGNORE_SPACE   # Removes commands from history when it's starting with a space
+
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
