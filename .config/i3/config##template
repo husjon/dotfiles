@@ -72,6 +72,9 @@ default_floating_border pixel 3
 # hide_edge_borders none
 for_window [all] border pixel 1
 
+gaps inner 16
+gaps outer 0
+
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
