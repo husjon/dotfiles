@@ -21,6 +21,10 @@ I use [Polybar](https://github.com/polybar/polybar) with a couple of self-made m
 I use [Rofi](https://github.com/davatorium/rofi) ([screenshot below](#rofi)) as my dmenu app launcher.
 
 
+### PyWal
+I use [PyWal](https://github.com/dylanaraps/pywal) to generate the color-schemes for my setup.
+
+
 ## Screenshots
 ### In use
 ![screenshot-active.webp](screenshot-active.webp)
