@@ -367,7 +367,7 @@
     ; Default: %icon% %name%
     label-focused = %name%
     label-focused-foreground = #ffffff
-    label-focused-background = #3f3f3f
+    label-focused-background = #00000000
     label-focused-underline = #fba922
     label-focused-padding = 2
 
