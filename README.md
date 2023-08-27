@@ -18,7 +18,7 @@ I use [Polybar](https://github.com/polybar/polybar) with a couple of self-made m
 
 
 ### Rofi
-I use [Rofi](https://github.com/davatorium/rofi) ([screenshot below](#rofi)) as my dmenu app launcher.
+I use [Rofi](https://github.com/davatorium/rofi) ([screenshot below](#rofi-1)) as my dmenu app launcher.
 
 
 ### PyWal
