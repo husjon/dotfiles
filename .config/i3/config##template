@@ -37,13 +37,13 @@ client.background       $bg
 set $mod Mod4
 set $Alt Mod1
 
-# https://pictogrammers.com/library/mdi/
+# https://www.nerdfonts.com/cheat-sheet
 set $workspace_01       "1: "
-set $workspace_02       "2: "
+set $workspace_02       "2: 󰨞"
 set $workspace_03       "3: 󰂫"
-set $workspace_04       "4: "
-set $workspace_05       "5: "
-set $workspace_06       "6: 󰗃"
+set $workspace_04       "4: 󱓧"
+set $workspace_05       "5: "
+set $workspace_06       "6: "
 set $workspace_07       "7: "
 set $workspace_08       "8: 󰙯"
 set $workspace_09       "9: 9"
