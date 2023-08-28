@@ -27,10 +27,10 @@ I use [PyWal](https://github.com/dylanaraps/pywal) to generate the color-schemes
 
 ## Screenshots
 ### In use
-![screenshot-active.webp](screenshot-active.webp)
+![screenshot-active.webp](screenshot-active.webp?raw=true)
 
 ### Rofi
-![screenshot-rofi.webp](screenshot-rofi.webp)
+![screenshot-rofi.webp](screenshot-rofi.webp?raw=true)
 
 ### Empty
-![screenshot-empty.webp](screenshot-empty.webp)
+![screenshot-empty.webp](screenshot-empty.webp?raw=true)
