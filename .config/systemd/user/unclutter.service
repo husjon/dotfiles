@@ -1,0 +1,14 @@
+[Unit]
+Description=unclutter
+Documentation=man:unclutter(1)
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=/bin/bash -c "PATH=~/bin:~/.local/bin:$PATH unclutter"
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

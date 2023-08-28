@@ -46,6 +46,7 @@ PACKAGES=(
     trash-cli
     ttf-jetbrains-mono
     ttf-nerd-fonts-symbols
+    unclutter
     which
     xss-lock
     zsh
