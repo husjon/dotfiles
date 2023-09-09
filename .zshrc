@@ -1,6 +1,7 @@
 eval "$(starship init zsh)"
 
-cat ~/.cache/wal/sequences
+test -z $VSCODE_INJECTION && \
+    cat ~/.cache/wal/sequences
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
