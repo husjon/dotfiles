@@ -1,5 +1,7 @@
 eval "$(starship init zsh)"
 
+export PATH=~/.cargo/bin:$PATH
+
 test -z $VSCODE_INJECTION && \
     cat ~/.cache/wal/sequences
 
