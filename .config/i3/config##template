@@ -113,7 +113,7 @@ bindsym XF86AudioNext           exec --no-startup-id playerctl next
 
 
 # Locker
-exec_always --no-startup-id xss-lock --transfer-sleep-lock -- lock
+exec_always --no-startup-id xss-lock --transfer-sleep-lock -- locker
 bindsym $mod+Scroll_Lock exec --no-startup-id loginctl lock-session
 
 
