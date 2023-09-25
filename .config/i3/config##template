@@ -34,8 +34,8 @@ client.background       $bg
 
 
 # Variables
-set $mod Mod4
-set $Alt Mod1
+set $mod Mod1
+#set $Alt Mod1
 
 # https://www.nerdfonts.com/cheat-sheet
 set $workspace_01       "1: "
@@ -124,7 +124,7 @@ bindsym $mod + Ctrl + Shift + p     exec --no-startup-id polybar-msg cmd toggle
 
 # Notification daemon (dunst)
 bindsym ctrl + shift + space    exec --no-startup-id dunstctl close
-bindsym ctrl + shift + $Alt + h  exec --no-startup-id dunstctl history-pop
+bindsym ctrl + shift + $mod + h  exec --no-startup-id dunstctl history-pop
 bindsym ctrl + shift + period   exec --no-startup-id dunstctl context
 
 
@@ -136,7 +136,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return         exec i3-sensible-terminal
-bindsym $mod+$Alt+Return    exec terminator -p dark
+bindsym $mod+ctrl+Return    exec terminator -p dark
 bindsym $mod+Shift+Return   exec terminator -e "sh -c ~/bin/tmux.sh"
 
 bindsym $mod+Shift+r        exec PureRef
@@ -166,10 +166,10 @@ bindsym $mod+shift+j move down
 bindsym $mod+shift+k move up
 bindsym $mod+shift+l move right
 
-bindsym $mod+$Alt+h move workspace to output left
-bindsym $mod+$Alt+j move workspace to output down
-bindsym $mod+$Alt+k move workspace to output up
-bindsym $mod+$Alt+l move workspace to output right
+bindsym $mod+ctrl+h move workspace to output left
+bindsym $mod+ctrl+j move workspace to output down
+bindsym $mod+ctrl+k move workspace to output up
+bindsym $mod+ctrl+l move workspace to output right
 
 # split in horizontal orientation
 # bindsym $mod+h split h
@@ -201,12 +201,12 @@ bindsym $mod+Escape reload
 
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+$Alt+ctrl+r restart
+bindsym $mod+ctrl+shift+r restart
 
 
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Mod2+Escape exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+$Alt+shift+Escape exit
+bindsym $mod+ctrl+shift+Escape exit
 
 
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
