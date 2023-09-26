@@ -13,10 +13,10 @@ configuration {
     terminal:               "terminator";
     ssh-command:            "{terminal} -e '{ssh-client} {host} || (echo \"\nPress any key to close\"; read)'";
 
-    kb-mode-previous:       "Super+h";
-    kb-row-down:            "Super+j";
-    kb-row-up:              "Super+k";
-    kb-mode-next:           "Super+l";
+    kb-mode-previous:       "Alt+h";
+    kb-row-down:            "Alt+j";
+    kb-row-up:              "Alt+k";
+    kb-mode-next:           "Alt+l";
     kb-accept-entry:        "Return,KP_Enter";
     kb-remove-char-back:    "BackSpace";
     kb-remove-word-back:    "Control+w";
