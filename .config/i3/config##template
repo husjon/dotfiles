@@ -221,7 +221,7 @@ bindsym shift+Print exec --no-startup-id flameshot full
 
 # Color Picker
 bindsym $mod+ctrl+s exec bash -c "sleep 0.1 && gpick -p"
-bindsym $mod+ctrl+p exec gpick
+bindsym $mod+shift+p exec gpick
 
 
 # resize window (you can also use the mouse for that)
