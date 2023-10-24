@@ -34,7 +34,7 @@ client.background       $bg
 
 
 # Variables
-set $mod Mod1
+set $mod Mod4
 #set $Alt Mod1
 
 # https://www.nerdfonts.com/cheat-sheet
