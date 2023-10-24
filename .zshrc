@@ -101,7 +101,7 @@ alias vzh="v ~/.zshrc"
 
 alias ls='ls --color=auto --group-directories-first'
 alias ll="ls -l"
-function rm { echo 'Use `trash` instead' }
+alias rm="trash"
 
 # git
 alias ga="git add"
