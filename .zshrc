@@ -92,7 +92,11 @@ fi
 
 # Variables
 export TERM=xterm
-export EDITOR=nvim
+
+type vi>/dev/null && export EDITOR=vi
+type vim>/dev/null && export EDITOR=vim
+type nvim>/dev/null && export EDITOR=nvim
+[[ -z $EDITOR ]] && echo "No EDITOR set!!!"
 
 
 # Aliases
