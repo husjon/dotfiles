@@ -12,3 +12,5 @@
 # Blur {{{
     blur-background             = true;
 # }}}
+
+backend = "glx"

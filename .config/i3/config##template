@@ -51,9 +51,9 @@ set $workspace_10      "10: 10"
 set $workspace_11      "11: 󰻎"
 
 {% if yadm.hostname == "workstation" %}
-set $monitor_left       "DP-4"
-set $monitor_right      "DP-2"
-set $monitor_tablet     "HDMI-0"
+set $monitor_left       "DisplayPort-0"
+set $monitor_right      "DisplayPort-1"
+set $monitor_tablet     "HDMI-A-0"
 {% endif %}
 {% if yadm.hostname == "workstation-sb" %}
 set $monitor_left       "DP-1"
