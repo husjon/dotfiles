@@ -171,15 +171,15 @@ bindsym $mod+shift+j move down
 bindsym $mod+shift+k move up
 bindsym $mod+shift+l move right
 
-bindsym $mod+ctrl+h exec "i3-msg resize grow   left 8px  || i3-msg resize shrink right 8px"
-bindsym $mod+ctrl+l exec "i3-msg resize grow   right 8px || i3-msg resize shrink left 8px"
-bindsym $mod+ctrl+j exec "i3-msg resize grow   down 8px  || i3-msg resize shrink up 8px"
-bindsym $mod+ctrl+k exec "i3-msg resize grow   up 8px    || i3-msg resize shrink down 8px"
+bindsym $mod+$mod2+h exec "i3-msg resize grow   left 8px  || i3-msg resize shrink right 8px"
+bindsym $mod+$mod2+l exec "i3-msg resize grow   right 8px || i3-msg resize shrink left 8px"
+bindsym $mod+$mod2+j exec "i3-msg resize grow   down 8px  || i3-msg resize shrink up 8px"
+bindsym $mod+$mod2+k exec "i3-msg resize grow   up 8px    || i3-msg resize shrink down 8px"
 
-bindsym $mod+$mod2+h move workspace to output left
-bindsym $mod+$mod2+j move workspace to output down
-bindsym $mod+$mod2+k move workspace to output up
-bindsym $mod+$mod2+l move workspace to output right
+bindsym $mod+ctrl+h move workspace to output left
+bindsym $mod+ctrl+j move workspace to output down
+bindsym $mod+ctrl+k move workspace to output up
+bindsym $mod+ctrl+l move workspace to output right
 
 # split in horizontal orientation
 # bindsym $mod+h split h
