@@ -7,3 +7,6 @@
 [submodule ".config/polybar/modules/weather"]
 	path = .config/polybar/modules/weather
 	url = git@github.com:husjon/polybar_module-weather.git
+[submodule ".config/polybar/modules/github"]
+	path = .config/polybar/modules/github
+	url = git@github.com:husjon/polybar_module-github.git

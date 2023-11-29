@@ -86,7 +86,7 @@
     modules-left =
     modules-center = i3
     #modules-right = posten available_packages restart_required  weather pulseaudio date
-    modules-right = posten available_packages restart_required  weather date
+    modules-right = posten github available_packages restart_required  weather date
 
     enable-ipc = true
 
@@ -256,7 +256,7 @@
     modules-left =
     modules-center = i3
     #modules-right = posten available_packages restart_required  weather pulseaudio date
-    modules-right = posten available_packages restart_required  weather date
+    modules-right = posten github available_packages restart_required  weather date
 
     enable-ipc = true
 
@@ -436,5 +436,7 @@
     include-file = ~/.config/polybar/modules/restart_required/restart_required
 [module/available_packages]
     include-file = ~/.config/polybar/modules/available_packages/available_packages
+[module/github]
+    include-file = ~/.config/polybar/modules/github/github
 
 ; vim:ft=dosini
