@@ -329,8 +329,7 @@ assign          [instance="pavucontrol"]        $workspace_10
 assign          [instance="carla"]              $workspace_10
 assign          [instance="cadence.py"]         $workspace_10
 
-for_window      [instance="godot_engine"]       floating enable
-for_window      [instance="godot_editor" title="godot engine"]       floating disable
+for_window      [instance="Godot_Engine" title=".*\(DEBUG\)"]       floating enabled
 #for_window      [instance="steamwebhelper" title="^Steam"]     floating enable
 for_window      [instance="gpick"]       floating enable
 
